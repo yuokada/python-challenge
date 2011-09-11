@@ -6,12 +6,13 @@ import urllib2
 def main():
     """docstring for main"""
     next_number = 12345
-    next_number = 34684 # shorter
-    while(next_number > 0):
-        print next_number
-        tmp = get_nothing_num(next_number)
-        print  "get_next" , tmp
-        next_number = tmp
+    next_number = 99286 # shorter
+    next_number = 66831 # shorter
+    next_number = 52899 # 52899   -> 66831
+    while(next_number.isdigit() ):
+        next_number = get_nothing_num(next_number)
+        print  "get_next:" , next_number
+            
     print  next_number
 
 def get_nothing_num(number):
@@ -19,12 +20,18 @@ def get_nothing_num(number):
     pat      = re.compile("and the next nothing is ([0-9]+)")
     base_url = "http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=%s"
     page     = urllib2.urlopen(base_url % number)
-    number   = pat.findall("".join(page.readlines()))[0] # findall or  another method
+    string   = "".join(page.readlines())
     page.close()
-    return number
+    number  =  pat.findall(string)
+    if number : # findall or  another method
+        return number[0]
+    else:
+        return string
     """
        please refactoring  try-catch-finally.
+       catch :urllib2.URLError
     """
+
 
 if __name__ == '__main__':
     ans = main()

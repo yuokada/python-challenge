@@ -40,13 +40,8 @@ def main():
     length_x,length_y = img.size      #(640,487)
     #print img.format    # JPEG
     #print img.mode    # RGB
-    for i in range(0,len(first) -2,2):
-        x1,y1,x2,y2 = first[i],  first[i+1], first[i+2], first[i+3]
-        drw.line( (x1,y1,x2,y2) )
-
-    for i in range(0,len(second) -2,2):
-        x1,y1,x2,y2 = second[i],  second[i+1], second[i+2], second[i+3]
-        drw.line( (x1,y1,x2,y2) )
+    drw.line(first )
+    drw.line(second )
     
     new.show() #bull.html
     return

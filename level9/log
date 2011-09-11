@@ -1,0 +1,3 @@
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/good.html"
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/good.jpg"
+sudo  aptitude  install python-imaging 

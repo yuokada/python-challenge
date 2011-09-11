@@ -1,0 +1,15 @@
+p   ezgo-imaging                    - EzGo imaging                              
+p   med-imaging                     - Debian Med imaging packages               
+p   med-imaging-dev                 - Debian Med packages for medical image deve
+i   python-imaging                  - Python Imaging Library                    
+p   python-imaging-dbg              - Python Imaging Library (debug extension)  
+p   python-imaging-doc              - Examples for the Python Imaging Library   
+p   python-imaging-doc-html         - Python Imaging Library の文書             
+p   python-imaging-doc-pdf          - Python Imaging Library の文書             
+p   python-imaging-sane             - Python Imaging Library - SANE interface   
+p   python-imaging-sane-dbg         - Python Imaging Library - SANE interface (d
+p   python-imaging-tk               - Python Imaging Library - ImageTk Module   
+p   python-imaging-tk-dbg           - Python Imaging Library - ImageTk Module (d
+v   python2.6-imaging               -                                           
+v   python2.6-imaging-sane          -                                           
+v   python2.6-imaging-tk            -                                           

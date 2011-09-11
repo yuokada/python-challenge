@@ -6,7 +6,6 @@ import urllib2
 def main():
     """docstring for main"""
     next_number = "12345"
-    next_number = "66831" # shorter
     #next_number = "52899" # 52899   -> 66831
     while(next_number.isdigit() ):
         next_number = get_nothing_num(next_number)

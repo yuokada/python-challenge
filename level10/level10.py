@@ -4,18 +4,17 @@
 import re
 
 def main():
-    a = [1,]
-    target = "1"
+    a = ["1",]
+    target = a[0]
     max_time =  33
     for i in range(max_time):
         target =  count_converter(target)
         a.append(target)
 
     for j in range(len(a)):
-        print j, len(str(a[j])), a[j]
+        print j, len(a[j]), a[j]
 
 def count_converter(number):
-    number = str(number)
     result  = []
     pre_chr = number[0]
     counter = 0
@@ -34,7 +33,6 @@ def count_converter(number):
                 result.append([pre_chr, counter])
                 counter = 1
                 pre_chr = number[i]
-    #print  result
     return  "".join([str(y)+str(x) for x,y in result])
 
 if __name__ == '__main__':

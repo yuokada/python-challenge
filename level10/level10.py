@@ -8,32 +8,18 @@ def main():
     target = a[0]
     max_time =  33
     for i in range(max_time):
-        target =  count_converter(target)
+        target =  counter(target)
         a.append(target)
 
     for j in range(len(a)):
         print j, len(a[j]), a[j]
 
-def count_converter(number):
-    result  = []
-    pre_chr = number[0]
-    counter = 0
-    for i in range( len(number) ):
-        if i == (len(number)-1): # slow
-            if pre_chr == number[i]:
-                counter += 1
-                result.append([pre_chr, counter])
-            else:
-                result.append([pre_chr, counter])
-                result.append([number[i], 1])
-        else:
-            if pre_chr == number[i]:
-                counter += 1
-            else:
-                result.append([pre_chr, counter])
-                counter = 1
-                pre_chr = number[i]
-    return  "".join([str(y)+str(x) for x,y in result])
+def counter(number):
+    pat = re.compile("(\d)\\1*")
+    result = []
+    for num_str in pat.finditer( str(number) ):
+        result.append(num_str.group(0))
+    return "".join( str(len(elem)) + elem[0] for elem  in  result )
 
 if __name__ == '__main__':
     main()      

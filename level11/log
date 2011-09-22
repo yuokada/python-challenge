@@ -1,0 +1,6 @@
+<title>odd even</title>
+<img src="cave.jpg" width="640" height="480" border="0"/>
+<font color="gold" size="+1"></font>
+
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/5808.html"
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/cave.jpg"

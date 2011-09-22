@@ -1,0 +1,6 @@
+cd  level12
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/evil1.jpg"
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/evil2.jpg"
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/evil3.jpg"
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/evil4.jpg"
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/evil2.gfx"

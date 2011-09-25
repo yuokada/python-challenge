@@ -1,0 +1,2 @@
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/italy.html"
+wget --http-user=huge --http-password=file "http://www.pythonchallenge.com/pc/return/wire.png"

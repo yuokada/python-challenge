@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3.6
 # -*- coding:utf-8 -*-
 
 def main():
@@ -10,5 +10,5 @@ def main():
 
 if __name__ == '__main__':
     ans = main()
-    print "level 1's answer: ", 
-    print  ans
+    print("level 1's answer: ", end=' ')
+    print(ans)
